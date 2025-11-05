@@ -1,0 +1,28 @@
+# Core LLM
+ollama>=0.1.0
+
+# Search & APIs
+arxiv>=2.0.0
+requests>=2.31.0
+
+# Embeddings & Vector Store
+sentence-transformers>=2.2.2
+faiss-cpu>=1.7.4
+
+# Database
+# sqlite3  # Built-in Python, removed
+
+# PDF Processing
+PyMuPDF>=1.23.0
+
+# Multi-Agent Framework
+langgraph>=0.0.30
+langchain>=0.1.0
+
+# UI Framework
+chainlit>=1.0.0
+
+# Utilities
+numpy>=1.24.0
+pandas>=2.0.0
+python-dotenv>=1.0.0
