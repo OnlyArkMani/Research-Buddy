@@ -40,3 +40,25 @@ EMBEDDING_DIMENSION = 384
 
 # User Settings
 DEFAULT_USERNAME = os.getenv("DEFAULT_USERNAME", "Researcher")
+
+# NEW: Filter Settings
+FILTER_DEFAULTS = {
+    'min_year': 2000,
+    'max_year': 2025,
+    'min_citations': 0,
+    'domains': []  # Empty = all domains
+}
+
+# NEW: Available domains for filtering
+RESEARCH_DOMAINS = [
+    'Computer Science',
+    'Medicine',
+    'Biology',
+    'Physics',
+    'Mathematics',
+    'Engineering',
+    'Psychology',
+    'Economics',
+    'Chemistry',
+    'Environmental Science'
+]
