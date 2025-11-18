@@ -8,28 +8,42 @@ google-generativeai>=0.3.0
 arxiv>=2.0.0
 requests>=2.31.0
 aiohttp>=3.9.0
-biopython>=1.81  # For PubMed
+biopython>=1.81
 
 # Embeddings & Vector Store
 sentence-transformers>=2.2.2
 faiss-cpu>=1.7.4
+chromadb>=0.4.0  # NEW: Better vector store
 
-# PDF Processing
+# PDF Processing & RAG
 PyMuPDF>=1.23.0
+langchain>=0.1.0
+langchain-community>=0.1.0
+pypdf>=3.17.0
 
 # Multi-Agent Framework
 langgraph>=0.0.30
-langchain>=0.1.0
 
 # UI Framework
 chainlit>=1.0.0
 
-# Performance
-asyncio>=3.4.3
-concurrent-futures>=3.1.1
+# Visualization
+networkx>=3.1
+plotly>=5.17.0
+matplotlib>=3.7.0
 
-# Utilities
+# Export Formats
+nbformat>=5.9.0  # Jupyter notebooks
+python-docx>=0.8.11  # Word docs
+fpdf2>=2.7.0  # PDF generation
+
+# Performance & Utilities
 numpy>=1.24.0
 pandas>=2.0.0
 python-dotenv>=1.0.0
 tqdm>=4.65.0
+pydantic>=2.0.0
+
+# Context & Memory
+redis>=5.0.0  # Optional: for distributed memory
+sqlite3-python>=1.0.0
