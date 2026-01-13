@@ -1,4 +1,4 @@
- `# Research Buddy
+ # Research Buddy
 
 An AI-powered research assistant that helps researchers discover, organize, and analyze academic papers across multiple sources using advanced natural language processing and semantic search capabilities.
 
