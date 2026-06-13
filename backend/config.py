@@ -24,6 +24,10 @@ GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
 OLLAMA_MODEL = "mistral:7b"
 OLLAMA_HOST = "http://localhost:11434"
 
+# Gemini model. 'gemini-pro' was retired in 2024 and the current API rejects it.
+# Override with the GEMINI_MODEL env var to use a different current model.
+GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-1.5-flash")
+
 # Search Settings
 MAX_RESULTS_PER_SOURCE = 20
 TOTAL_SOURCES = 5

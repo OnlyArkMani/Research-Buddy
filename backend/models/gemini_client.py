@@ -3,10 +3,21 @@ from typing import Dict, Any, List
 import json
 
 class GeminiClient:
-    def __init__(self, api_key: str):
-        """Initialize Gemini Pro with conversation history"""
+    def __init__(self, api_key: str, model_name: str = None):
+        """Initialize Gemini with conversation history.
+
+        model_name defaults to config.GEMINI_MODEL. The legacy 'gemini-pro'
+        endpoint was retired in 2024 and the current API rejects it.
+        """
         genai.configure(api_key=api_key)
-        self.model = genai.GenerativeModel('gemini-pro')
+        if model_name is None:
+            try:
+                from config import GEMINI_MODEL
+                model_name = GEMINI_MODEL
+            except Exception:
+                model_name = "gemini-1.5-flash"
+        self.model_name = model_name
+        self.model = genai.GenerativeModel(model_name)
         self.conversation_history = []
         
     def generate(self, prompt: str, system_prompt: str = None, use_history: bool = False) -> str:

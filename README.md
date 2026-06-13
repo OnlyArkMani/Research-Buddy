@@ -1,4 +1,4 @@
- # Research Buddy
+# Research Buddy
 
 An AI-powered research assistant that helps researchers discover, organize, and analyze academic papers across multiple sources using advanced natural language processing and semantic search capabilities.
 
@@ -136,7 +136,7 @@ cd ResearchBuddy
 2. Create and activate virtual environment:
 ```bash
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\\Scripts\\activate
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
 3. Install dependencies:
@@ -412,10 +412,3 @@ For issues, questions, or feature requests, please open an issue on the project 
 - Citation network visualization
 - Research trend analysis
 - Personalized recommendations
-
-
-##Author 
-Ark Mani 
-arkmanimishra@gmail.com
-
-
